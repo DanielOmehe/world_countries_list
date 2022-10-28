@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>World Countries List Data Visualisation</title>
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <header class="countries-header">
+            <h1 class="header-text">WORLD COUNTRIES LIST</h1>
+            <h3 class="countries-text">Total Number of countries: <span class="total-countries"></span></h3>
+            <h3 class="startwith-result">Countries that startwith<span class="search-criteria"></span> <span class="num-of-coutries">are</span> <span class="total-result"></span></h3>
+            <h3 class="contain-result">Countries that contain<span class="contain-criteria"></span> are </span> <span class="total"></span></h3>
+
+            <div class="buttons">
+                  <button class="button" id="start-with">STARTING WORD</button>
+                  <button class="button" id="contain">SEARCH ANY WORD</button>
+                  <button class="button" id="sort"><i class="fas fa-arrow-down"></i><sup>A</sup><sub>B</sub></button>
+            </div>
+
+            <div class="search">
+                  <input type="text" class="text">
+                  <i class="fas fa-search icon"></i>
+            </div>
+      </header>
+      <ul class="countries-list" id="countries-list"></ul>
+      <script src="js/all.min.js"></script>
+      <script type="module" src="data/countries.mjs"></script>
+      <script type="module" src="main.mjs"></script>
+</body>
+</html>

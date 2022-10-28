@@ -1,0 +1,167 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+      overflow-x: hidden;
+}
+
+.countries-header{
+      width: 100vw;
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(5, 88, 139, 0.363), rgba(8, 120, 190, 0.39)), url('images/globe-2.jpg') no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+
+.header-text{
+      color: #fff;
+      font-size: 50px;
+      letter-spacing: .7rem;
+}
+
+.countries-text{
+      color: #fff;
+      font-size: 25px;
+}
+
+.total-countries{
+      color: #fff;
+      font-size: 25px;
+      margin: 0 4px;
+}
+
+.startwith-result{
+      color: #fff;
+      margin: 5px 0;
+      display: none;
+}
+
+.contain-result{
+      color: #fff;
+      margin: 5px 0;
+      display: none;
+}
+
+.startwith-result.show{
+      display: block;
+}
+
+.contain-result.show{
+      display: block;
+}
+
+.search-criteria{
+      color: rgb(243,40,13);
+      font-style: italic;
+      margin: 0 3px;
+}
+
+.contain-criteria{
+      color: rgb(243,40,13);
+      font-style: italic;
+      margin: 0 3px;
+}
+
+.total-result{
+      color: rgb(74,174,88);
+      margin: 0 3px;
+}
+
+.total{
+      color: rgb(74,174,88);
+      margin: 0 3px;
+}
+
+.buttons{
+      display: flex;
+}
+
+.button{
+      background: rgb(28,145,216);
+      color: #fff;
+      outline: 0;
+      border: 1px solid rgb(28,145,216);
+      cursor: pointer;
+      margin: 0 5px;
+      padding: 10px 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+#start-with.change{
+      background-color: rgb(73,1,191);
+      border: 1px solid rgb(73,1,191);
+}
+
+#contain.change{
+      background-color: rgb(73,1,191);
+      border: 1px solid rgb(73,1,191);
+}
+
+#sort.change{
+      background-color: rgb(73,1,191);
+      border: 1px solid rgb(73,1,191);
+}
+
+.search{
+      margin: 10px;
+}
+
+.search .icon{
+      color: #fff;
+      font-size: 25px;
+      margin: -2px 2px;
+}
+
+sup{
+      margin-bottom: 3px;
+}
+
+sub{
+      margin-left: -6px;
+}
+
+.text{
+      width: 450px;
+      height: 45px;
+      border-radius: 50px;
+      padding: 0 20px;
+      font-size: 20px;
+      outline: 0;
+      border: 1px solid #fff;
+      box-shadow: 0 0 5px rgba(8, 120, 190, 0.39);
+}
+
+.text::placeholder{
+      text-align: center;
+      color: rgba(0,0,0,.3);
+}
+
+.countries-list{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 50px;
+}
+
+.country{
+      width: 180px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(4, 58, 119, 0.267), rgba(6, 92, 145, 0.301)), url('images/map_image.jpg');
+      background-position: center;
+      background-size: cover;
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 10px 30px;
+      border-radius: 5px;
+}
